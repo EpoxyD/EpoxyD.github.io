@@ -4,7 +4,6 @@ document.getElementById("GetBeacons").addEventListener("click",function(){
         //navigator.bluetooth.requestDevice({ filters: [{ name: 'RECO' }] });
         navigator.bluetooth.requestLEScan({
           filters: [{manufacturerData: 0x004C}],
-          options: {keepRepeatedDevices: false}
         })
     }
     else{
