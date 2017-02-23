@@ -1,10 +1,13 @@
 document.getElementById("GetBeacons").addEventListener("click",function(){
     if(navigator.bluetooth){
         console.log("Bluetooth found");
+        
         //navigator.bluetooth.requestDevice({ filters: [{ name: 'RECO' }] });
-        navigator.bluetooth.requestLEScan({
-          filters: [{manufacturerData: 0x004C}],
-        })
+        //navigator.bluetooth.requestLEScan({
+        //  options: {acceptAllAdvertisements: true,}
+        //})
+        
+        navigator.bluetooth.requestLEScan();
     }
     else{
         console.log("No Bluetooth present");
@@ -12,4 +15,4 @@ document.getElementById("GetBeacons").addEventListener("click",function(){
 })
 
 
-//24DDF411-8CF1-440C-87CD-E368DAF9C93E
+//UUID Reco Beacon : 24DDF411-8CF1-440C-87CD-E368DAF9C93E
