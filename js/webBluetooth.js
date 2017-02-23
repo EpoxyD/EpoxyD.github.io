@@ -7,7 +7,7 @@ document.getElementById("GetBeacons").addEventListener("click",function(){
         //  options: {acceptAllAdvertisements: true,}
         //})
         
-        navigator.bluetooth.requestLEScan();
+        navigator.bluetooth.requestLEScan({options:{acceptAllAdvertisements: true,}});
     }
     else{
         console.log("No Bluetooth present");
