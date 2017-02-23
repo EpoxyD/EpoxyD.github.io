@@ -2,7 +2,7 @@ document.getElementById("GetBeacons").addEventListener("click",function(){
     if(navigator.bluetooth){
         console.log("Bluetooth found");
         
-        navigator.bluetooth.requestDevice({ filters: [{ name: 'RECO' }] });
+        //navigator.bluetooth.requestDevice({ filters: [{ name: 'RECO' }] });
         //navigator.bluetooth.requestLEScan({
         //  options: {acceptAllAdvertisements: true,}
         //})
